@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tropic Lush Boutique">
+  <meta name="author" content="Gianne Micaila S. Pineda">
+  <meta name="keywords" content="Tropic Lush Boutique, Authenthic USA Products, Curated For You, 100% Original Brands Bought From USA and Canada">
+  <title>Tropic Lush Boutique</title>
+  <link rel="icon" type="image/.ico" href="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/306904555_455544189953603_4925325189015487148_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_eui2=AeGxXaqKcvIhxg1cG0r_osX4Y9kkWZWEqRdj2SRZlYSpF06wwmClgXS6lXMxOCXgm-uYXDWCzjVa7m6FnyJb951M&amp;_nc_ohc=0Za87YUTIS4Q7kNvgEaDtPH&amp;_nc_oc=Adj-RYKYTVz6fOsAnS8sQ0Ffe4hI3LfmBVgnZuiewbCzesXfjOCoKuknIkV5Y7fegYQ&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=cA3e9QKjoA2CcmNz3U3ToA&amp;oh=00_AYFS1Ou0pAdOFUfw0yqvgppE93NwvTJaFS2JGiVmpCA8Dg&amp;oe=67DCB18A">
+  <style>
+    
+    /* General Styles */
+  body {  
+    font-family: "Comic Sans MS", Times New Roman, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    color: #333;  
+    text-align: center;  
+    animation: fadeInUp 2s forwards;  
+    background: linear-gradient(#EBB29E, #EFBFAE, #F2CBBE, #F5D8CE, #F8E5DF);  
+    background-size: 400% 400%;  
+    animation: backgroundAnimation 8s infinite alternate;  
+  }  
+
+  @keyframes backgroundAnimation {  
+    0% { background-position: 0% 50%; }  
+    100% { background-position: 100% 50%; }  
+  }  
+
+  @keyframes fadeInUp {  
+    0% { opacity: 0; transform: translateY(20px); }  
+    100% { opacity: 1; transform: translateY(0); }  
+  }  
+
+  @keyframes fadeIn {  
+    0% { opacity: 0; transform: translateY(20px); }  
+    100% { opacity: 1; transform: translateY(0); }  
+  }  
+
+  /* Header & Footer */
+  header, footer {  
+    background: rgba(239, 228, 219, 0.9);  
+    padding: 20px;  
+    font-size: 24px;  
+    font-weight: bold;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  }  
+
+  footer {  
+        margin-top: 20px;  
+        font-size: 18px;
+  }
+
+  /* Navigation */
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgb(241, 233, 225);  
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    background: #ddd;
+    transform: scale(1.1);
+  }
+
+  /* Content */
+  .container {  
+    width: 80%;  
+    margin: auto;  
+    background: rgba(241, 233, 225, 0.9);  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  
+  }  
+
+  .page-content {  
+    padding: 20px;  
+    display: none;  
+    opacity: 0;  
+    transform: translateY(20px);  
+    animation: fadeIn 1s forwards;  
+  }  
+
+  /* Shop Section */
+  .shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .product img:hover {
+    transform: scale(1.1);
+  }
+
+  .product div {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .product h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .product p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    background: #ffcc70;
+    color: #333;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background: #f7b84e;
+  }
+
+  /* Testimonial Section */
+  .testimonial-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .testimonial-container:hover {
+    transform: scale(1.02);
+  }
+
+  .testimonial-slide {
+    display: none;
+    text-align: center;
+    animation: fadeIn 1s;
+  }
+
+  .testimonial-slide p {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    padding: 10px;
+  }
+
+  .testimonial-slide h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  /* Navigation Buttons */
+  .prev, .next {
+    background-color: #ffcc70;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: #f7b84e;
+    transform: scale(1.1);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .testimonial-container {
+        max-width: 90%;
+    }
+  }
+  </style>
+  <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Announcement Bar */
+        .announcement {
+            background: white;
+            color: blue;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .announcement a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: purple; 
+            padding: 10px 0;
+        }
+
+        .nav-item {
+            padding: 10px 20px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        .section {
+            display: none; /* Hidden by default */
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: purple;
+        }
+
+        /* Active Section */
+        .active {
+            display: block; /* Show active section */
+        }
+
+        /* Centered Logo */
+        .logo {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            background: linear-gradient(to right, #FFD166, #D98AFF);
+        }
+  </style>
+  <style>
+        #typewriter {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6699;
+        }
+  </style>
+  <style>
+  img {
+  border-radius: 50%;
+  }
+  </style>
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+  .navbar {
+  width: 100%;
+  background-color: rgb(194, 111, 255);
+  overflow: auto;
+  }
+
+  .navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+  .navbar a:hover {
+  background-color: rgb(255, 145, 181);
+  }
+
+  .active {
+  background:url(https://i.pinimg.com/736x/3a/d3/84/3ad38468ee9a2083d0e3f6a5e2126a04.jpg) no-repeat center center/cover;
+  }
+
+  @media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  }
+  <h2>Our Products</h2>
+  <p>▪️💯 𝘖𝘳𝘪𝘨𝘪𝘯𝘢𝘭 𝘣𝘳𝘢𝘯𝘥𝘴 𝘣𝘰𝘶𝘨𝘩𝘵 𝘧𝘳𝘰𝘮 𝘜𝘚𝘈 🇺🇸
+     (𝘰𝘯𝘭𝘪𝘯𝘦 & 𝘱𝘩𝘺𝘴𝘪𝘤𝘢𝘭 𝘴𝘵𝘰𝘳𝘦), 𝘨𝘶𝘢𝘳𝘳𝘢𝘯𝘵𝘦𝘥 𝘮𝘰𝘯𝘦𝘺 
+     𝘣𝘢𝘤𝘬 𝘪𝘧 𝘱𝘳𝘰𝘷𝘦𝘯 𝘧𝘢𝘬𝘦.
+  ▪️50% DP required
+  📌𝘗𝘳𝘪𝘤𝘦𝘴 𝘮𝘢𝘺 𝘷𝘢𝘳𝘺 𝘥𝘦𝘱𝘦𝘯𝘥𝘴 𝘰𝘯 𝘴𝘵𝘰𝘳𝘦 𝘱𝘳𝘰𝘮𝘰𝘵𝘪𝘰𝘯 𝘧𝘳𝘰𝘮 𝘵𝘩𝘦 𝘵𝘪𝘮𝘦 𝘰𝘧 𝘪𝘯𝘲𝘶𝘪𝘳𝘺.
+  ✨𝘋𝘪𝘴𝘤𝘭𝘢𝘪𝘮𝘦𝘳: 𝘕𝘰 𝘤𝘰𝘱𝘺𝘳𝘪𝘨𝘩𝘵 𝘪𝘯𝘧𝘳𝘪𝘯𝘨𝘦𝘮𝘦𝘯𝘵 𝘪𝘯𝘵𝘦𝘯𝘥𝘦𝘥. 𝘛𝘳𝘰𝘱𝘪𝘤 𝘓𝘶𝘤𝘩 𝘉𝘰𝘶𝘵𝘪𝘲𝘶𝘦 𝘪𝘴 𝘯𝘰𝘵 𝘢𝘧𝘧𝘪𝘭𝘪𝘢𝘵𝘦𝘥 𝘰𝘳 𝘢𝘴𝘴𝘰𝘤𝘪𝘢𝘵𝘦𝘥 𝘸𝘪𝘵𝘩 𝘢𝘯𝘺 𝘣𝘳𝘢𝘯𝘥 𝘱𝘰𝘴𝘵𝘦𝘥. 𝘈𝘭𝘭 𝘤𝘰𝘱𝘺𝘳𝘪𝘨𝘩𝘵 𝘢𝘯𝘥 𝘮𝘶𝘴𝘪𝘤 𝘢𝘳𝘦 𝘳𝘦𝘴𝘦𝘳𝘷𝘦𝘥 𝘵𝘰 𝘵𝘩𝘦 𝘳𝘪𝘨𝘩𝘵𝘧𝘶𝘭 𝘰𝘸𝘯𝘦𝘳.
+  </p>
+
+  <p>Tropic Lush Boutique is a vibrant online retail business that specializes in authentic, high-quality products sourced directly from the UK, USA, Canada, and UAE. Your brand is all about luxury, exclusivity, and trust, offering customers premium items from globally recognized brands.</p>
+
+  <p id="demo">Our Mission
+
+  At Tropic Lush Boutique, we are committed to:
+  ✔ Bringing you the most sought-after UK brands at competitive prices.
+  ✔ Guaranteeing authenticity – No replicas, no knock-offs, just the real deal.
+  ✔ Offering a seamless, hassle-free shopping experience with fast shipping & secure payments.</p>
+
+  <p><h2 meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Text</title>
+    <style>
+        .glow {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ff3399;
+            text-shadow: 0 0 10px #ff3399, 0 0 20px #ff6699, 0 0 30px #ff99cc;
+            animation: glowEffect 1.5s infinite alternate;
+        }
+
+        @keyframes glowEffect {
+            0% { text-shadow: 0 0 10px #ff3399; }
+            100% { text-shadow: 0 0 20px #ff99cc, 0 0 40px #ff3399; }
+        }
+  </style>
+  <style>
+        .bounce {
+            font-size: 24px;
+            font-weight: bold;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .bounce {
+            font-size: 24px;
+            font-weight: bold;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .glow {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ff3399;
+            text-shadow: 0 0 10px #ff3399, 0 0 20px #ff6699, 0 0 30px #ff99cc;
+            animation: glowEffect 1.5s infinite alternate;
+        }
+
+        @keyframes glowEffect {
+            0% { text-shadow: 0 0 10px #ff3399; }
+            100% { text-shadow: 0 0 20px #ff99cc, 0 0 40px #ff3399; }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .shimmer {
+            font-size: 30px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff5733, #ff4da6, #3498db);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+  </style>
+  <style>
+        .glow {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ff3399;
+            text-shadow: 0 0 10px #ff3399, 0 0 20px #ff6699, 0 0 30px #ff99cc;
+            animation: glowEffect 1.5s infinite alternate;
+        }
+
+        @keyframes glowEffect {
+            0% { text-shadow: 0 0 10px #ff3399; }
+            100% { text-shadow: 0 0 20px #ff99cc, 0 0 40px #ff3399; }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .shimmer {
+            font-size: 30px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff5733, #ff4da6, #3498db);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+
+        .product-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+        }
+
+        .product-card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #000;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .color-options {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin: 10px 0;
+        }
+
+        .color-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .color-dot:hover {
+            border: 2px solid #000;
+        }
+  </style>
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+
+        h2 {
+            color: #ff4081;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .order-summary {
+            background: #fff3f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .order-summary p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .total-price {
+            font-weight: bold;
+            font-size: 16px;
+            color: #d81b60;
+            margin-top: 10px;
+        }
+
+        .place-order {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .place-order:hover {
+            background-color: #d81b60;
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .glow {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ff3399;
+            text-shadow: 0 0 10px #ff3399, 0 0 20px #ff6699, 0 0 30px #ff99cc;
+            animation: glowEffect 1.5s infinite alternate;
+        }
+
+        @keyframes glowEffect {
+            0% { text-shadow: 0 0 10px #ff3399; }
+            100% { text-shadow: 0 0 20px #ff99cc, 0 0 40px #ff3399; }
+        }
+  </style>
+  <style>
+        .shimmer {
+            font-size: 30px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff5733, #ff4da6, #3498db);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .shimmer {
+            font-size: 30px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff5733, #ff4da6, #3498db);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+  </style>
+  <style>
+        .glow {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ff3399;
+            text-shadow: 0 0 10px #ff3399, 0 0 20px #ff6699, 0 0 30px #ff99cc;
+            animation: glowEffect 1.5s infinite alternate;
+        }
+
+        @keyframes glowEffect {
+            0% { text-shadow: 0 0 10px #ff3399; }
+            100% { text-shadow: 0 0 20px #ff99cc, 0 0 40px #ff3399; }
+        }
+  </style>
+  <style>
+        .shimmer {
+            font-size: 30px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff5733, #ff4da6, #3498db);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+  </style>
+  <style>
+        .shimmer {
+            font-size: 30px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff5733, #ff4da6, #3498db);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s infinite linear;
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .wave span {
+            display: inline-block;
+            animation: waveAnimation 1.5s infinite ease-in-out;
+        }
+
+        @keyframes waveAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+  </style>
+  <style>
+        .glow {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ff3399;
+            text-shadow: 0 0 10px #ff3399, 0 0 20px #ff6699, 0 0 30px #ff99cc;
+            animation: glowEffect 1.5s infinite alternate;
+        }
+
+        @keyframes glowEffect {
+            0% { text-shadow: 0 0 10px #ff3399; }
+            100% { text-shadow: 0 0 20px #ff99cc, 0 0 40px #ff3399; }
+        }
+  </style>
+</head>
+<body>
+  <div class="announcement">
+    Tropic Lush Boutique EST 2021 | 100% Original brands bought from <a href="#">🌥️✈️</a>
+  </div>
+  <div class="navbar">
+    <div class="nav-item" onclick="showSection('home')">
+      Home
+    </div>
+    <div class="nav-item" onclick="showSection('search')">
+      Search
+    </div>
+    <div class="nav-item" onclick="showSection('contact')">
+      Place Your Order Here
+    </div>
+    <div class="nav-item" onclick="showSection('login')">
+      About us
+    </div>
+  </div>
+  <div class="logo">
+    Tropic Lush Boutique
+  </div>
+  <div id="home" class="section active">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="typewriter"></div>
+    <script>
+        const text = "Welcome to Tropic Lush Boutique – Authentic USA Products, Curated for You.";
+        let index = 0;
+
+        function typeWriterEffect() {
+            if (index < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriterEffect, 100);
+            }
+        }
+
+        window.onload = typeWriterEffect;
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/306904555_455544189953603_4925325189015487148_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_eui2=AeGxXaqKcvIhxg1cG0r_osX4Y9kkWZWEqRdj2SRZlYSpF06wwmClgXS6lXMxOCXgm-uYXDWCzjVa7m6FnyJb951M&amp;_nc_ohc=0Za87YUTIS4Q7kNvgEaDtPH&amp;_nc_oc=Adj-RYKYTVz6fOsAnS8sQ0Ffe4hI3LfmBVgnZuiewbCzesXfjOCoKuknIkV5Y7fegYQ&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=Zz_ay2u3bjpzdpuhEH1sJg&amp;oh=00_AYGlPIDb--mN2Lk3d0ZH-7Y6nR3sdHM_lEqorj1sIVT_YA&amp;oe=67DC410A" alt="Tropic lush logo" style="width:200px">
+    <h1>Your One-Stop Shop for Original US Products</h1>
+    <p>🌴 Welcome to Tropic Lush Boutique! 🌴 "Where Luxury Meets Authenticity – Shop 100% Original US Products" ✦ Discover a curated collection of high-end beauty, fashion, and lifestyle products sourced straight from the USA. ✦ We bring you the best in skincare, makeup, perfumes, and accessories—so you can shop confidently, knowing everything is 100% authentic and premium quality.</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1 class="glow">Our Collections Explore a world of luxury with our carefully curated products:</h1>
+    <ul>
+      <li meta="" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h2 class="bounce">✨ Designer Bags – Michael Kors, Fossil, Coach, and more.</h2>
+      </li>
+      <li meta="" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h2 class="bounce">✨ Premium Perfumes – Victoria’s Secret, Bath and Body Works, and top international brands.</h2>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="glow">🛍️ Shop Page (Inside Categories and Subcategories</h1>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="wave"><span>F</span><span>r</span><span>a</span><span>g</span><span>r</span><span>a</span><span>n</span><span>c</span><span>e</span><span>s</span></h1>
+        <script>
+        let letters = document.querySelectorAll(".wave span");
+        letters.forEach((letter, index) => {
+            letter.style.animationDelay = ${index * 0.1}s;
+        });
+        </script>
+        <ul>
+          <li>-Signature UK Perfumes-(Jo Malone, Burberry, Creed)</li>
+          <li>-Long-Lasting Cologne Collections-</li>
+          <li>-Exclusive and Limited-Edition Scents-</li>
+        </ul>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="wave"><span>F</span><span>a</span><span>s</span><span>h</span><span>i</span><span>o</span><span>n</span> <span>A</span><span>c</span><span>c</span><span>e</span><span>s</span><span>s</span><span>o</span><span>r</span><span>i</span><span>e</span><span>s</span></h1>
+        <script>
+        let letters = document.querySelectorAll(".wave span");
+        letters.forEach((letter, index) => {
+            letter.style.animationDelay = ${index * 0.1}s;
+        });
+        </script>
+        <ul>
+          <li>-Elegant Watches and Jewelry-</li>
+          <li>-Luxury Scarves and Handkerchiefs-</li>
+          <li>-Designer Sunglasses and Statement Pieces-</li>
+        </ul>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="wave"><span>B</span><span>a</span><span>g</span><span>s</span> <span>a</span><span>n</span><span>d</span> <span>W</span><span>a</span><span>l</span><span>l</span><span>e</span><span>t</span><span>s</span></h1>
+        <script>
+        let letters = document.querySelectorAll(".wave span");
+        letters.forEach((letter, index) => {
+            letter.style.animationDelay = ${index * 0.1}s;
+        });
+        </script>
+        <ul>
+          <li>-Iconic UK Designer Handbags-</li>
+          <li>-Classic Leather Wallets-</li>
+          <li>-Trendy and Minimalist Crossbody Bags-</li>
+        </ul>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="shimmer">Your Favorite US Brands, Now Within Reach!</h1>
+        <p>No more searching, no more worrying about fakes—just the best of the US, delivered to you.</p>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="glow">➡ Shop Now and Experience the Luxury of Authenticity!</h1>
+        <h1 class="wave"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span> <span>U</span><span>s</span></h1>
+        <p>Tʀᴏᴘɪᴄ Lᴜsʜ Bᴏᴜᴛɪǫᴜᴇ EST 2021 100% 𝘖𝘳𝘪𝘨𝘪𝘯𝘢𝘭 𝘣𝘳𝘢𝘯𝘥𝘴 𝘣𝘰𝘶𝘨𝘩𝘵 𝘧𝘳𝘰𝘮 🇺🇸🇨🇦🇦🇪</p>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="shimmer">Page · Shopping and retail</h1>
+        <h1 class="shimmer">🏘 Tinio Street, San Lorenzo, Gapan, Philippines</h1>
+        <h1 class="shimmer">🕾 0919 099 1123</h1>
+        <h1 class="shimmer">🖂 sheenamica@gmail.com</h1>
+        <h1 class="shimmer">🌍 facebook.com/tropiclushboutique</h1>
+        <h1 class="shimmer">🕰 Always open</h1>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="wave"><span>O</span><span>u</span><span>r</span> <span>F</span><span>a</span><span>c</span><span>e</span><span>b</span><span>o</span><span>o</span><span>k</span> <span>P</span><span>a</span><span>g</span><span>e</span></h1>
+        <script>
+        let letters = document.querySelectorAll(".wave span");
+        letters.forEach((letter, index) => {
+            letter.style.animationDelay = ${index * 0.1}s;
+        });
+        </script> <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/483227670_608817805643499_8709823916282009722_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeEdyHRY902dteqg6jozn9mCRG_tWVvlfpVEb-1ZW-V-lVZ64bAhO5UWkzQe4feWHVRDF7xzxJrLfTD4WIO2XJJV&amp;_nc_ohc=PJrHT0H5-AIQ7kNvgGnYyWd&amp;_nc_oc=Adj6uIW5wkXJGPuD_r2EnD4MLqoBaAVIcMLnqPVZ5fqo7jVbokrP0YoaZutWmONXnUw&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;oh=03_Q7cD1wHMBJ4nCDDa-FIKmd0mPqsyt0OehW_n1r_ipq8jTkGNhg&amp;oe=67FDEE2C" alt="shopping bag qr" width="400" height="400">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="wave"><span>M</span><span>o</span><span>d</span><span>e</span> <span>O</span><span>f</span> <span>P</span><span>a</span><span>y</span><span>m</span><span>e</span><span>n</span><span>t</span> <img src="https://scontent.fmnl8-5.fna.fbcdn.net/v/t1.15752-9/484250035_9798629516814028_4044267111459600697_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeHJacnLKeitDk1sriHW6CcFgEhTpW_Gl3aASFOlb8aXdts7h-7O1lIJUtfuuPFl754htuRspZvM08ymz2VF4rI6&amp;_nc_ohc=SsabIl_7dzQQ7kNvgHISCw7&amp;_nc_oc=Adjv_UPrHc8YuwPcsvODtMA9TzrD3McGMjCLKCRnUSWuobxOMGMe-BLBUSmyKgTKVSY&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-5.fna&amp;oh=03_Q7cD1wFK5TzVL0PwjBoCmub6eHpI9sS8Es6O7CA6CbTufmT83g&amp;oe=67FDFA7F" alt="Mode of Payment" width="400" height="400"></h1>
+        <div id="search" class="section">
+          <h1 class="wave"></h1>
+        </div>
+        <h2>Search for Products</h2><input type="text" placeholder="Search for a product..." style="padding: 10px; width: 80%; max-width: 400px;">
+        <div class="product-container">
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/483222225_9397708073656231_4467803129727474283_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeFa3wJo29Q6cXnebAmS_eSFq7KB5ujkoFmrsoHm6OSgWZWg0J8ODVPBU0TR4y-xZ8HqC9YaGrPJxRZIfbu5dadh&amp;_nc_ohc=QTjW5gRDBE0Q7kNvgFv7w4u&amp;_nc_oc=Adgt1sdVFNt7e3J3-YlcKH1fvIzvnorXcTv-yZ4Q1uXlcwupRUE34_pFKr_-yLFJDjk&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-2.fna&amp;oh=03_Q7cD1wFKVYAiCnAxIRRZPSm_hpmGAzmzsrsPMjOOy07JehSGow&amp;oe=67FC526C" alt="Coach Millie Satchel ">
+            <h3>Coach Millie Satchel</h3>
+            <p>₱11,599</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t1.15752-9/483202056_1369475784090668_2843607285911691919_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeHsA6zco-apVVjBicsMSg4GoCcFFSgUkjagJwUVKBSSNpArwxi4JP26qs5ONmpshNpIBWoazWdboSkmdKo71C8H&amp;_nc_ohc=6ds5TmAjrfMQ7kNvgEbOtJ4&amp;_nc_oc=AdgsqSKrxjowpVPSi2mA6_uznn83pBnuUpTxDIWdK9DZNImVKQN20SnM-jUOL-r3BL4&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-6.fna&amp;oh=03_Q7cD1wGNpg-V3RxZS1fsNul2Tw3nbddtmGFA_BXLyXAj-B7HFA&amp;oe=67FC56FB" alt="black handbag">
+            <h3>Kate Spade Chelsea Tote</h3>
+            <p>₱5,999</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/484362721_656207997095869_9222449262528674841_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeEJ1Yku-wBiF7za1QA7MOCG8nRPeFMUOJXydE94UxQ4lb7JhOMrziypJNjk7RZ5HWlvF7jGX_IwJgLaiD2w7-R7&amp;_nc_ohc=F5rIDC2cBUUQ7kNvgE5Yx3h&amp;_nc_oc=Adgt7SdzPT_gOnOwMIap-n_njXKo1fdrEYwNownBuCZNTbauGC-YlPqtn8MjArEgqVw&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;oh=03_Q7cD1wFilos6x5AQLiEQPCQAlDc3z8og4HUiRmRUiQjCaICuGw&amp;oe=67FC5E30" alt="black Bag">
+            <h3>Kate Spade Quilted Tote</h3>
+            <p>₱5,990</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/483742667_982732363488170_5186220490230161533_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeFt-4jFM3IucQws3zRyIewRAjh5gvCz5mkCOHmC8LPmaWaYj85cHNFxWlHE0CQV-TTaLrTZilUSJG7bxF7wnu4w&amp;_nc_ohc=wjgXAYEzVa0Q7kNvgEUjfs4&amp;_nc_oc=AdgBOjo38HLbin96bDyDk06FRvRMNx5WROJoqZgV1Jn_iibQ2Ql2q6kBbNj06wA3lJ8&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-1.fna&amp;oh=03_Q7cD1wE8Ap2LapuP0vsMl7h4razazfZMR8eU87eiUKegiCMSOw&amp;oe=67FD8DC3" alt="black Bag">
+            <h3>Kate Spade Chelsie Belt bag</h3>
+            <p>₱5,499</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/483696572_939402268039107_7172502183382696508_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeEnU0X7cEKRZKU1NaeBDTV6uDMBkson3Ky4MwGSyifcrLxgLJrlvnkGK5BiTRgY2fTZXHOD3sPwyDkbbKeHSAtY&amp;_nc_ohc=mxgHWSEgKQ4Q7kNvgHOvJBY&amp;_nc_oc=Adi1lZVy0KafiVb2XHRVvFHGPfStQTKdxQrMG7VrH6T47j6vRTPtgk6vXs7SS5QkCk8&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-1.fna&amp;oh=03_Q7cD1wGJ5HBEwrk9jjmd1PAzXJTRXbL9Axz7J_Kdr94UPrtUqA&amp;oe=67FDA462" alt="pink Bag">
+            <h3>Michael Kors Belted Satchel</h3>
+            <p>₱5,499</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t1.15752-9/483185203_1111180927426808_567061190335017265_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeEQiKP2VXG26dUtMDfj4x9MiQ_VUKnuDTqJD9VQqe4NOhLsIy3ZxwupHsyc8P3cJfrmdLre_miP9gZA9LQa0WZH&amp;_nc_ohc=oenmZvKweV0Q7kNvgEqv0Nt&amp;_nc_oc=AdhC4EhAw3YGbClllwB0wvHj9BPBtmfS9g2BxB9XMVci9neegizCOcZibJH66evEjNE&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-6.fna&amp;oh=03_Q7cD1wFK2WpEZp-mIXUOAGwA3KFLKe8wszcLC3cXbVufRHE2Pw&amp;oe=67FD983E" alt="white Bag">
+            <h3>Michael Kors Maisie Belt Bag</h3>
+            <p>₱5,499</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/483975217_940994401482142_7777458139460744135_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeFT9Lxh5bIunDB0uofI5PCo0zD64Rt6_I_TMPrhG3r8jxUrNA2rHPghtJgL2deZvhF7UC4qzzRY3dzRgqKE2fQv&amp;_nc_ohc=VMjPrftYgz4Q7kNvgFwY_XE&amp;_nc_oc=AdipCd5_Lw9srJtLEhpW9J9Zl3XmEwPgRGOBiAT3IaNCBu02eOPIKtgxcyfGU4kwy3Q&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-2.fna&amp;oh=03_Q7cD1wGoUqV7_oLikyFHOdIu_TDKMu8lrKXaU-SgWNrgKi3Y8A&amp;oe=67FD8853" alt="white Bagpack">
+            <h3>Michael Kors Maisie Backpack</h3>
+            <p>₱4,799</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/484274253_1584612342252798_814143132157513584_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeHawl01Xjy2AXAabZgEG0xLRkoXRrWsWJ5GShdGtaxYnqqPkdYzgCU8l9Garx-G7hTnziaWG5G47WsDXUqX2vlw&amp;_nc_ohc=ZZbokdpJDu8Q7kNvgFQqoLh&amp;_nc_oc=Adjir4tgeZz3SRSaxU7AtSCUMZ51Vwgf0d2hUm_0Wyt6ktS2tUiHCJN7aIVBjT7BNNY&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;oh=03_Q7cD1wEFtkFCJ4PlEsg-EXDVfAnBCfCETvwcVvgPmRpSOSe6rA&amp;oe=67FDA21B" alt="pink Bag">
+            <h3>Michael Kors XS Tote Bag</h3>
+            <p>₱5,599</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-5.fna.fbcdn.net/v/t1.15752-9/484281899_2130985167359204_6817781157544477837_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeFf7qf30TjXXWMqkn4J-khFG5zjNYZ4orEbnOM1hniisWV1_MyDvvu_jp8iioIiyUuddAe5CJJ8rAoMz3mIlMN_&amp;_nc_ohc=281om9jAc3sQ7kNvgFLBfPO&amp;_nc_oc=AdhN3Yylczvg7Gfm8z7mQ2hhlvEvbWPh0BlyTs1RHJKozDEUicnF82qGD0AEPT6K9vk&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-5.fna&amp;oh=03_Q7cD1wEsDunDGix65Fbrc7j2UQ6FCBHnCKZ6t2uqH4qXTqaBeQ&amp;oe=67FD963B" alt="black Bag">
+            <h3>Michael Kors XS Tote Bag</h3>
+            <p>₱5,599</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/483406128_1016041907086923_523974247048169864_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeExfS5N1DpY55SgwN5dAj8MnFOV7WdPnqKcU5XtZ0-eolgogjSli16c_BHMGitmZ6IudXdELPSPfoJP7TUW-B5r&amp;_nc_ohc=qM36W58D74QQ7kNvgFdR7qt&amp;_nc_oc=AdgKQvQ_W2nwPDV-l8twbRcBnpwj31h11WrYCQeqxD_uY_40LcCk9GeHlo2uC4uokls&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;oh=03_Q7cD1wEifG_caCtRLTFjqguS9dZfYi2fUIk16GBItAgadd0F6w&amp;oe=67FD9B95" alt="black Bag">
+            <h3>Michael Kors Jaycee Backpack</h3>
+            <p>₱7,990</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/483179490_1338611517459753_6884676329819635028_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeFj3aO8YVyxMsxKDdoMw7Wo3HZgkZ-kFQLcdmCRn6QVAn2wWdd4HvD3Wrhhmfn6PeJHx1RFcLxzgTcFZJnFLEks&amp;_nc_ohc=31bJ3wqUtmcQ7kNvgGBBlOJ&amp;_nc_oc=AdjpJplw13vAoFq5ck_bgx8_jKSWTjTKpEOavYcZy4FL5N2_VdwLn3oYS55NRpC6p7Y&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;oh=03_Q7cD1wHbO-d7Upb1bym3mah5nfR7P6Q-Cn4QYbLcva_iSQjJog&amp;oe=67FD928E" alt="black Bag">
+            <h3>Lacoste Backpack</h3>
+            <p>₱3,990</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/483200347_1831470394294246_6212766505222389981_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeG9cTH5fgrkdCPaWyaS5yuTaZ5Lv5cANCZpnku_lwA0Jo5mzOHqHIZbFgl_rOpTkqU1ekkK31ZEZFPzG1Ov8Qu5&amp;_nc_ohc=j5tzDkOH27UQ7kNvgEWa1Um&amp;_nc_oc=AdiH7oICbzZJw5fELqtis7aA-tpqMJcWcf-RKE9VkTNuRI4qE8MV0VajI0p9oX3Hj1s&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;oh=03_Q7cD1wGPAPaGwjydwWIpSMGy7HbVtm_I-1DlEuUC_JRyXz3o8w&amp;oe=67FD90F5" alt="blue Backpack">
+            <h3>Lacoste Backpack</h3>
+            <p>₱3,399</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/483203856_1021478776506053_1400663150802640889_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeHmh7sH7BFnzrgEq-IP9BOOL1UdESkxJ8kvVR0RKTEnyb4yEX0eQF63YQOhQ_HRM7EqMOGBic_q720QCSxpdb5P&amp;_nc_ohc=oLO6x0IUyyEQ7kNvgGZz21T&amp;_nc_oc=AdgwA2IyMthUg9L4q8Yh4H4zJDLogeqdKTMxlv_BIvxOm6Hxayu5-c3p7gYKFjyuKSA&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;oh=03_Q7cD1wFbTx8xP0zCayu4jkZszpRnVdzTJGldvEzb6GnokqeTgQ&amp;oe=67FDB166" alt="black Bag">
+            <h3>Michael Kors Tech Attached Bag</h3>
+            <p>₱5,699</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/483182472_659079959989409_8844275527364737882_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeGxKzPiUicYw0xvNV8Fw1DXEOGQbULmHlAQ4ZBtQuYeUBXkGxlPxzdha0h21Chf9g4EKu7cwfg1y1j7z1CKJNwC&amp;_nc_ohc=a_PUJytbPfYQ7kNvgFpsQ0M&amp;_nc_oc=AdiPP-Vz1x8izPDnWZ3aNmOnfi--CZ9YcGPzBb44PqYIYt-Tf_0CzyrgRNHzOkv9Htg&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;oh=03_Q7cD1wHSwOxAG_53eK_AtrsimnhVEBBVFTET83HdVFxjfMcwpg&amp;oe=67FD96E3" alt="black and purple Bag">
+            <h3>Lacoste Convertible Tote Bag</h3>
+            <p>₱3,999</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/483185203_654072790500917_5662658331747999650_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeHn2BUs4-_V85rR4cQm7EzZmhFUa1MNTSWaEVRrUw1NJSIuLrgdCS071PO3sXYHatNxpEeomx6dbHi_SHDZnVVk&amp;_nc_ohc=8Rj6QOqMTVwQ7kNvgGvAeo7&amp;_nc_oc=AdgZWyk2hZU2UkCVAy0oFkpa9988AyI0W2zkH0q75SmcnWytaQBiF1ELBbBSdMB3Srk&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-1.fna&amp;oh=03_Q7cD1wGs75k7TnETDUZOm6KCy0Ls_z2-4irVmggjf-agI1iJ-A&amp;oe=67FD8BD4" alt="black Bag">
+            <h3>Lacoste Tote Bag Small</h3>
+            <p>₱4,990</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/483207098_9384181358334954_7133460658305866516_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeGRiHvKmx0uhs0zFzFl8IDxXRcLRWrYWohdFwtFathaiKJtLjKHOIUH9-p_P0XTS2ol2vZSC3JYX6jWQ17ALBfO&amp;_nc_ohc=2dXvW5Vv_jYQ7kNvgHuESzx&amp;_nc_oc=AdhUKGkqZe0C72KqFAUYwoE4J5IfX4rAFTEEpdi6GWxicPwzWkeOhioYYe6dHyp6iKQ&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-2.fna&amp;oh=03_Q7cD1wEkfAf77sEovCQ1SfmQ8Wm2E_t1DRMFTxNa2ZWcRRXhdw&amp;oe=67FDB0F0" alt="black wallet">
+            <h3>Michael Kors Double Zip Wallet</h3>
+            <p>₱3,599</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/483385623_2110379499422061_3327254167344132759_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeHCWH-LRp3Ve1ss9XwjVDTSJKw1RhFBYbEkrDVGEUFhsTWgB-xKNy82OsA7X4i7FeG5neYDdj6zuHxi-nVMwOrh&amp;_nc_ohc=1QHcgtiYlBMQ7kNvgEQf4G6&amp;_nc_oc=AdhXOai7dNjoyi4m2G3zrmx20y0Nh8dZiH1yscCwsPC6EboiiJ1ZfYirudmq2AOdl3o&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;oh=03_Q7cD1wEEhS78UrAsZQT5iZCN8v7JzDBYmIwRf4LZjNCxzUJ2EQ&amp;oe=67FDADB0" alt="black small wallet">
+            <h3>Michael Kors Lanyard Wallet</h3>
+            <p>₱2,999</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/483193420_1367190938029755_9042492934711750180_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeGwmFH6MkDUPfiTw1QO6D2rfr9MYGhugn5-v0xgaG6CfgjO71WedxmF-IjvlFDMySHSG8O2JI9D4r5miNQjPRgv&amp;_nc_ohc=K7irORXlMK4Q7kNvgF5YJfC&amp;_nc_oc=Adjrw0HPQWyIcbfkgg39Pc2F7tf0TgZATOp9HAqc6Zh4s3qaRc_aLmDdaYX_oTqdWM4&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;oh=03_Q7cD1wFoE5E2_bj15iggU_Ip_-0xoHWbPTr74t679F0Zrqt8Wg&amp;oe=67FD8F61" alt="black wallet">
+            <h3>Michael Kors Cooper Folio Wallet</h3>
+            <p>₱3,499</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t1.15752-9/483351725_28736434402669168_1276183836169968046_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeGisi23Qa3DDnsVktpR0CuCf6UQkr6UWOd_pRCSvpRY55AFfdW-w04frBLxUlBjcz0DqTBBICRG9BlDunAroqqc&amp;_nc_ohc=OiYYX7tLbsMQ7kNvgEeW5o1&amp;_nc_oc=Adi6UtT-0wL810B8p5mxIZ6l-0KpYb9uugjI1U3RQLkZ1bsftbuzL6ZWYP5rTK74vbs&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;oh=03_Q7cD1wEhFzxI7L9vnqT5RbzylgXEpkTc7fyWZdKxkAk2xJpKuQ&amp;oe=67FDAB5E" alt="black wallet">
+            <h3>Coach Bifold Men</h3>
+            <p>₱4,199</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/482319940_688255443706346_3315769044393053418_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeGPurzn71LyDP6ssspHm6olAwsRcoJrcWgDCxFygmtxaHP6hnRtVnk5Rb4Oxw9gI-ZKdZ_wH5YNYvoX0zCEiCFX&amp;_nc_ohc=wQmOORlp1fYQ7kNvgGLmDzq&amp;_nc_oc=AdhGF4E96MpfyXXmC-ZN7z_cdlfq0d6IXJJ2Qcu5-1AreazTs0ALWZ03PBW9IwCPhvg&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;_nc_gid=FmTR-ABic9gQlyyYvgJrow&amp;oh=00_AYE22yQXcu4y9q_mDr7aY3i9n6oQ06CvRP6wfZAsn-6j2A&amp;oe=67DC0DB4" alt="black Bag">
+            <h3>Michael Kors Jaycee Medium backpack</h3>
+            <p>₱4,699</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/483910585_688253610373196_9146293548435057157_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeEjuyTGeZPODFIaD4MU5FidL9yBb5d30-ov3IFvl3fT6pQs8VpoQINm_GYsadjoI23h1vng89vvBjIgvRJu1tj1&amp;_nc_ohc=UChHk2O6wG8Q7kNvgFbtU0q&amp;_nc_oc=AdiA0tk1qyHU_og-nkoXQKPXLMG1gmsL2beBqhhKMu-6aEqAkjBRe1EdqFsQ7Pd7Wi4&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-1.fna&amp;_nc_gid=vGKMxMl2ZmkSEWaNeBAlag&amp;oh=00_AYGOkBCg8BUD0_94FoDUPwMTD0VktIsuA0mBAMWpNjm7Og&amp;oe=67DC0F07" alt="black transparent Bag">
+            <h3>Kate Spade Clare clear tote w/ wristlet</h3>
+            <p>₱6,199</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t39.30808-6/480070506_688222547042969_2605502928020272384_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeGpTRNECo_2bmAYpjTUnwKzkj-Y7nlkOTCSP5jueWQ5MPSs4m8P7VdirBHgUgsyWVkb6Ji7gxl29SeP1TK4-b5N&amp;_nc_ohc=wQPq6zd7sU8Q7kNvgHE4rSC&amp;_nc_oc=AdgzJzgWaQ8tQdYw_-8EVAzyxaP56yXgVQLo166TMks2bIDqbCVSeHKLq00fv0N58nA&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-6.fna&amp;_nc_gid=Bpy5IJBbHJWfGbE5f4S42Q&amp;oh=00_AYFh0a7WIhJWfsekq30QLMlljlEXdn3FRcSGov_M60a1jA&amp;oe=67DC16DA" alt="pink Bag">
+            <h3>Kate Spade Love shack 3D mini heart</h3>
+            <p>₱5,199</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/484051819_687769927088231_1155020273398234657_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeEJkcKH61OFIzjlVjoq7lpiAwg6omc-wEgDCDqiZz7ASMBpfQ2D2cwqV9-BSinTxYpcQyHFWXJRF07wO0cL6DRu&amp;_nc_ohc=VpCa_Nn0agUQ7kNvgFyL7sY&amp;_nc_oc=AdjR_5p-pmTRXX9fMOHm-EwseDEvjgWd2w9dmAnHF67ZWo0aUFymjt9fxfTel7hQ07A&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;_nc_gid=NiSyWVDGpDsCyGYfIG8DBg&amp;oh=00_AYHHekxTYxSqmniyMgr5gvB-YvBv9AQ9frIBxYc7mAU4uA&amp;oe=67DBF666" alt="black and white Bag">
+            <h3>Michael Kors Bradshaw Cam bag</h3>
+            <p>₱4,599</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/480666938_687704747094749_4894160308573076706_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeHq3fieSjkvCH_l_jVbxEFryHdMeVP2WOTId0x5U_ZY5DDarbnftprPRcUK-7httvVFD63f2oISnvLn6mAbvZ9B&amp;_nc_ohc=-a0O_9VDaFQQ7kNvgGBNhsj&amp;_nc_oc=AdgB5x5n9b50_C-cR-Ew11jRMziWIXnZSfKPgdb_K04NqFILvHpjsmzE59lAMLIiZn0&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;_nc_gid=Kv6R6Gys7LxBjUAopKpdVA&amp;oh=00_AYHBCM39tViQXRUYC8uMrrBdmfz70rhf_k-EIo34pT6bTw&amp;oe=67DBF660" alt="white bag">
+            <h3>Michael Kors Mirella sm tote</h3>
+            <p>₱3,799</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/483908783_687704023761488_640877660444882819_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeE1nzXFYrv3AKmyzvT1mCHD0DEu5jA3vjrQMS7mMDe-OrYS0s7wrgBflrEKO5Wc4YKjQxmHo1vyoYClXz4Smzdb&amp;_nc_ohc=_y3kinDzeYEQ7kNvgEGV8Eo&amp;_nc_oc=AdglEveyQvCbenMBGvIDP6wPP1Rn6H-Uyu2yOeQ7dgvYmoWWaQVH0SxRsNCBYZW5oJU&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-1.fna&amp;_nc_gid=6h3ykDVsvjBIIODvxhWnkg&amp;oh=00_AYHqroe_vKdS8RGdrivzZTtKzmmriI4FtVe8rwFaxFI8HA&amp;oe=67DC1F11" alt="white,black and red bag">
+            <h3>Michael Kors Jet Set Medium duffle</h3>
+            <p>₱3,799</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/484050250_687646863767204_5515272046025342950_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeGb-h1p3P3NFsEeQK2iYSEbaBkxSzk7FuFoGTFLOTsW4cBHEOHSZ7Vdpu9rHB3WCJKi_HHcbQXh8fwJBSbxPzZS&amp;_nc_ohc=MCX8tYXTuFYQ7kNvgHZZY3g&amp;_nc_oc=AdhAEvADMYXohnwVr3K0HsskQmDbm4m0WacJNYdTGjX7ORPDF1HZDDhBDWuYu_eVly0&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-2.fna&amp;_nc_gid=spz7thqikhrl4j_Iw3Szmg&amp;oh=00_AYGRx8WDRjlDNfIxzmHB60mXroG1z7oDnlZ8uVSKHEDS4A&amp;oe=67DC0D6D" alt="black bag">
+            <h3>Michael Kors Avril sm satchel</h3>
+            <p>₱4,988</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/480061538_668218949043329_7225407796791588933_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeG9tGt5rFBPdWqRS5um5kBVA1xztPA0ao0DXHO08DRqjV3rMcE8u43N1MY_pS8j4uYZDawiaoCWd1eSgjfGAeIX&amp;_nc_ohc=mz4J_D5FvIgQ7kNvgGs7GfN&amp;_nc_oc=Adjbn99RWT78SfdM4xgY0coUs18vWPlQgbOFUtUssb5Gndbu6akEhrlRxBCBfKN5awo&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-1.fna&amp;_nc_gid=kGd_FK7fE7qkomkKCjkaYw&amp;oh=00_AYF7_-uApGhhHcPI9NbhuKaTjrAVDwPPcUZwgjPVA7raDw&amp;oe=67DBE8EB" alt="black backpack">
+            <h3>Michael Kors Jaycee Medium backpack</h3>
+            <p>₱5,399</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/483829884_687623453769545_2271674826609519719_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeGd-vim1xUSFcyj9QIWydqIj7rCs-nOV1qPusKz6c5XWp4-uDUXX6_RAlj8KFwFRJd97spzw1LU8VFVNSESbCpu&amp;_nc_ohc=71TAvC2f5eIQ7kNvgH3gv__&amp;_nc_oc=Adj_FWeg4k4riHViU4pJJGZgeTu_1JAiyLGTV8OVqVEg2ChNdar60UdW3mTV-4gi5ew&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-2.fna&amp;_nc_gid=1U4zC91W4jFtjDI3nD8j7w&amp;oh=00_AYF--Og37Wva8LRSg88bznOvStFqO6hfphknhkqbVE7D6w&amp;oe=67DBEDE9" alt="black bag">
+            <h3>Michael Kors Jet Set Medium duffle</h3>
+            <p>₱5,399</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/483854464_685367723995118_7403073739074883192_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeHhXBuBqJnO9MZ_rp3ppexiRrJksaJwxHBGsmSxonDEcNSNt91oDoQN6BL6uJ9XKW6GAdIhepPLRSzkReVdJWKu&amp;_nc_ohc=JO-OVWG0gUIQ7kNvgHsLcTU&amp;_nc_oc=AdjjmVESBW4lwT59WSxdLieTUJaGWkE_1M_KAXmlFVS2wvJlRRbNtBrlizSrco_8Xtk&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;_nc_gid=_4pyLF71PqquD-zW3VoLTQ&amp;oh=00_AYG_3veaIt7SJmwmTxQM5Vc2oPVGILDFxWBfQ7BY_agLIw&amp;oe=67DC0169" alt="black with brown Bag">
+            <h3>Michael Kors Whitney Top handle</h3>
+            <p>₱6,299</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/483366289_685499853981905_6934112578973010518_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeHSUhGN3_XpDP5Yz5E0owmV8-xK7avmJMbz7Ertq-YkxjmpUzlfffaoww-xF21Ma3B680AIySECxhcL1QQwBJIj&amp;_nc_ohc=opO6bjr3uREQ7kNvgFMAzcb&amp;_nc_oc=AdgmPmYxdsoJuPUSyV3Q5Tte5OQKJOfz1WG7FBgsjeNpf3flY8SQhnpC9wJZDwx-7uQ&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=LA7MeDpXxpNMoPCrhfLfvQ&amp;oh=00_AYFBkdlxeL1Q84L23ysYGzuGmlxXA8lmFD0kVo5Friif-w&amp;oe=67DC0DBF" alt="white bag">
+            <h3>Michael Kors Sheila Large tote bag</h3>
+            <p>₱4,599</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/483849990_689363476928876_8753494548606632733_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeERQNYMsomFYdKv8GQGjymDCbrRzh2Pm-QJutHOHY-b5G4MRECqFjUe8cucbPBxqBMr2PcgA005uT0UW4EZIhlW&amp;_nc_ohc=vLXkoHT9FnIQ7kNvgG3prSv&amp;_nc_oc=Adgvwc7CKGDbm9B1pPIOLlLmsXJqIMMQpPnItMfdg9V5_lTdBozC_zVva2K3OTp3j78&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-1.fna&amp;_nc_gid=fDfC9QnmNzKVQeIHSBs_RQ&amp;oh=00_AYGiOskus5cEoIiik_tPkaKaTqCKcPnIjYLJdRT1kYLENQ&amp;oe=67DC1EF1" alt="brown watch">
+            <h3>Coach Women's Watch</h3>
+            <p>₱5,888</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/484049720_689363546928869_4810111357791622239_n.jpg?_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeH5ljsUB-FDzrrEdUvQQKCl8LaSTzWhqKnwtpJPNaGoqY6-cY1qGiAXdwwAiny3EabJ2n8vKywZ7TDcSRT_z-pX&amp;_nc_ohc=N75J7dpM0AEQ7kNvgH0oLVv&amp;_nc_oc=Adioq0izO5X1zkQ_Jq79GVR-d_sUklkIu9KzjLzZm1_2ZkvAH-WhZWxK285Xz0QWrMM&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=fM0XojHf6ZznwUAZ5JdPSw&amp;oh=00_AYHv90AfyG5VFsnQRaWHv0mG0cchbRc3swf6Bm-iUhARXA&amp;oe=67DC1B66" alt="pink watch">
+            <h3>Coach Women's Watch</h3>
+            <p>₱5,888</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/481296862_689363513595539_5755275772344622881_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeEnAz0XMh0uR-tFCLoT2Yeimul2rgNrGC-a6XauA2sYL3TXynY5sg1CUHkbOTWY5utt55jkndKxjRHXbNv9Amim&amp;_nc_ohc=lPccjPZFangQ7kNvgFq5p0N&amp;_nc_oc=Adjg5n36MIiyVshenwl7hsJmQ-tASHb1ikSyweBok87XkQF43qyABLnkCNhvScOG8xY&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=0HX-Kxlp6Bn4S56tz4pqBA&amp;oh=00_AYHis8GQelDTYvklPon6hWLXWGTbsxYQZ0IkODk2KEoPeQ&amp;oe=67DC1ED7" alt="green watch">
+            <h3>Coach Women's Watch</h3>
+            <p>₱5,888</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/483888483_689273576937866_7343646679607877349_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeFMAJVBcp7Jk1YSe0jdn9CCDyVDFrwTBJAPJUMWvBMEkPDLvqC87nfWLSVmW8JRPY0L0oxztT1KHsH27cU2TjZP&amp;_nc_ohc=zeuly7hH09cQ7kNvgESOJDN&amp;_nc_oc=Adg3_k14efurq-KteAgqou3kDJUbOqaFQUPi9-wHK_BWUAxK24d-mIXA99JXu6LXUxM&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-1.fna&amp;_nc_gid=i5N5IwNeqEqoEidmL-odsQ&amp;oh=00_AYEGyOuoshsunzEYRMC1Ecaz0JSzU00p4R0wVa0I2ujGFQ&amp;oe=67DC0C30" alt="blue silicone watch">
+            <h3>Coach Silicone Watch</h3>
+            <p>₱5,399</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/483820261_689273533604537_2952776966904185315_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeF0hcgn-eFoITGWXif8nx51o8Uq0qJvi3yjxSrSom-LfF-LT4vmSu2ThcT7XDIE58Hf32NnyTqa7GAnhcCOg5T1&amp;_nc_ohc=MKlTblm1S-cQ7kNvgF5QMwt&amp;_nc_oc=AdinHb2ud7iOzBrFJN6FeqJLeXk-tqlzN8WwmzCz5ecpbOIfakcMVLoxCJ7DHC0DTbU&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-2.fna&amp;_nc_gid=xJM3TVOq9HJEEW2a_3JQZQ&amp;oh=00_AYFinUjRaJEZUOVh6AAS0b3vSBT_KFxWevslqkUbcuEDGQ&amp;oe=67DC23DB" alt="orange silicone watch">
+            <h3>Coach Silicone Watch</h3>
+            <p>₱5,399</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/483864731_689273493604541_6954406632420310898_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeEv1TMx4SVxAiGpBI7IP_3O-ePpuYb2YaT54-m5hvZhpN1xFfh70sDOmsWBm9-aDJHybPzIbGVOM1lf09bbMx8B&amp;_nc_ohc=0ER93cvfnsIQ7kNvgET8V54&amp;_nc_oc=AdhEJUShO64rGBkcTL1_wvMMfRS9s3b81HawoQm7-Zx47QXAjwl29XeYmkWI5Ze9Mfc&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;_nc_gid=D8E0js_hU1Ib7L2-eor3Vw&amp;oh=00_AYF8uJNeDA4GO5GTdi0Zi0DFQGV93UuKwSm4deqYtrTQHg&amp;oe=67DC01C0" alt="brown silicone watch">
+            <h3>Coach Silicone Watch</h3>
+            <p>₱5,399</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/484197372_689273613604529_4209277017489093978_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeHRwhI2szET1qStGU1RLyKaqoUzW14I-22qhTNbXgj7bdhMzelrk_r017hIb931TM3V9XZbk4hOt0HDdxDkEaHF&amp;_nc_ohc=lna9NP1JTQYQ7kNvgHTi5DI&amp;_nc_oc=AdjL31XoHBOXouDrNkAtZsavzaO1QCCMyzwGVpnVGv5lbbjjLapHUeKhhAe6u4Fl7mM&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=kFosv3Lqx2PMFLBS72Jzcw&amp;oh=00_AYHMuSubhZwpq0DRT-uKqfPpKxx-KV_6XL_fRaUcn-CHiQ&amp;oe=67DC2AF0" alt="white silicone watch">
+            <h3>Coach Silicone Watch</h3>
+            <p>₱5,399</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t39.30808-6/484088036_687583573773533_6964837384392680415_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeHIh-Vo0R5eDyM_x5tiH4QEnS1jK6GlJ66dLWMroaUnrmEPTWatPMdFC6u0Hql6Xt4fLInSHIGG_KXfaAVyyr-E&amp;_nc_ohc=Rs28amKKqMAQ7kNvgGHEvZl&amp;_nc_oc=AdiFbR2IvM7TSvm3v4RLuVPQMbWBrMdUshn5I0LcunQjqtmZr8xBladx5XT3j4UwoWk&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-6.fna&amp;_nc_gid=FFYlx6wHoHgW8Ow16j86lA&amp;oh=00_AYFxjrJPVpxg4Fa9X23-eNrb8Hkjq2fUJ0qaJXY9VHiOdw&amp;oe=67DC0CFB" alt="black with white bag">
+            <h3>Mark Jacobs Mini Grand</h3>
+            <p>₱8,888</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-6.fna.fbcdn.net/v/t39.30808-6/483648440_687582357106988_5825985926559241511_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeGJRpEZu4XTnGO8fDbnCc_mg454oqmb3euDjniiqZvd66S0vQrJc-VYMN1tCz0khqLHM5fenJ5uftQi8w0ehdXn&amp;_nc_ohc=YY5cp90b5vcQ7kNvgGAV8-y&amp;_nc_oc=Adg7RsaQwVhdSu9BFZ45PSlrI0UWS6JoKrlHWxpEy1nQRld8ppE6Oc3iDO38cbJP6D8&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-6.fna&amp;_nc_gid=owuj5cjgnqSdRzPTTHE6wg&amp;oh=00_AYFNywvwIHUWTm8yNq7Gv0rTzwlu-x2WE3y0HIVeu7fNeQ&amp;oe=67DC0B4D" alt="silver bag">
+            <h3>Michael Kors Lyra mini</h3>
+            <p>₱4,499</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/482347416_686168623915028_1547390357647509025_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_eui2=AeHYaUR4BMte5A3lQ8WSdcMLn9MBqvhlEcGf0wGq-GURwdjZrKCsJOjAfoIKfXt2UJAp_E1m-c7PG0P120_XzMHj&amp;_nc_ohc=qQ6nC8XTVdIQ7kNvgFHCo2M&amp;_nc_oc=Adg5MdkIdzlXrspyyPRg4WCAZYjyoLYDC2KveKs5qSXwSO0_7q1KfYzQTmmcPe6HzAA&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=XPjq_DcOyIOHH6S9h4056Q&amp;oh=00_AYF4pG2l40Czs2M2IGQO7zAH674D-UNWHe05tC-OgFjCHQ&amp;oe=67DBFCC9" alt="rainbow watch">
+            <h3>Coach Leather Watch</h3>
+            <p>₱4,788</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/484351752_686165820581975_4413239836100198413_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_eui2=AeETFbfpCyD6sx8K6nwB8sOBlg3njIIvdY6WDeeMgi91juBJp5PMhilCOZZDdawj6c0uAO1233x2R_Yh_o-LiWnO&amp;_nc_ohc=w33vwUnsyFgQ7kNvgHCmAbT&amp;_nc_oc=Adhdyxl3wVNMBZ3vi8o-ykonRNq4T8a3YltqSnz10yZOxt2L5R8KE1AO3YJ1el13D-E&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-2.fna&amp;_nc_gid=lgrZnMsxDtTKMsQ8qLOtaA&amp;oh=00_AYHKgkSREkgvBvM0qGwe5-JGGfAfJVS4UHQeTjur8cuT5Q&amp;oe=67DC17A1" alt="pink watch">
+            <h3>Coach Sig Watch</h3>
+            <p>₱5,499</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/484052085_686046813927209_773603335517315267_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeHdD7YCNDFG-Iv_upGyqwpnnPlYgV-srT-c-ViBX6ytP1t5t9edITRSO4jt_Rg67Zpbks9uqk0i6GkjtUUF1lAu&amp;_nc_ohc=bNfANlNtn4gQ7kNvgFs5psV&amp;_nc_oc=Adif9ec0Tp72RJzn3oMjgFaSYkiBQBdLlKNVXY_c10Bhg8yw_4Vd7LLqTbKUhZHb4ms&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=sMaX46CKOUjylr2s14rXeg&amp;oh=00_AYH0cmxgKe4tXEtmZV2oRMc9G5c5dDdFZciKTyyj4wle6w&amp;oe=67DC2CBE" alt="brown with black watch">
+            <h3>Tommy Hilifiger Mens Watch</h3>
+            <p>₱4,388</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/481233774_686046787260545_7356600543275603728_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeGb_y9jmHXSLIava0wmxRGBc-UlfMTe4nZz5SV8xN7idpSUIrsKz8iUGS6re2d1GA35GfRV7kut1EbisT2Ffkk9&amp;_nc_ohc=tOgsHkLxXncQ7kNvgF7nCM1&amp;_nc_oc=AdhDTkHhvmRvj-Bcm4YcjC2BAhVQTwRScJOO7MbMsjqTj69qilXySZAsQ3Nzk291s7w&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-4.fna&amp;_nc_gid=wv2ftg_4nAi0WGBQdCWPAg&amp;oh=00_AYEPIIRrK5-Y4DNa9-8idLHxftsMVZZC4uCZLWS1nbmqRg&amp;oe=67DC149F" alt="Dark Brown watch">
+            <h3>Tommy Hilifiger Mens Watch</h3>
+            <p>₱4,388</p>
+            <div class="color-options">
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="contact" class="section">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <div class="container">
+    <h2>Place Your Order</h2>
+    <div class="order-summary" id="order-summary">
+      <h3>PAYMENT</h3>
+      <div id="cart-items"></div>
+    </div>
+    <form id="order-form" name="order-form">
+      <div class="form-group">
+        <h1 style="font-size:100%;">Products Here</h1><select id="product" name="product">
+          <option value="Coach Millie Satchel ">
+            Coach Millie Satchel - ₱11,599.00
+          </option>
+          <option value="Kate Spade Chelsea Tote ">
+            Kate Spade Chelsea Tote - ₱5,999.00
+          </option>
+          <option value="Kate Spade Quilted Tote">
+            Kate Spade Quilted Tote - ₱5,990.00
+          </option>
+          <option value="Michael Kors Belted Satchel">
+            Michael Kors Belted Satchel - ₱5,499.00
+          </option>
+          <option value="Michael Kors Maisie Belt Bag">
+            Michael Kors Maisie Belt Bag- ₱5,499.00
+          </option>
+          <option value="Michael Kors Maisie Backpack">
+            Michael Kors Maisie Backpack - ₱4,799.00
+          </option>
+          <option value="Michael Kors XS Tote Bag">
+            Pink Michael Kors XS Tote Bag - ₱5,599.00
+          </option>
+          <option value="Michael Kors XS Tote Bag">
+            Black Michael Kors XS Tote Bag- ₱5,599.00
+          </option>
+          <option value="Michael Kors Jaycee Backpack">
+            Michael Kors Jaycee Backpack - ₱7,990.00
+          </option>
+          <option value="Lacoste Backpack">
+            Lacoste Backpack - ₱3,399.00
+          </option>
+          <option value="Michael Kors Tech Attached Bag">
+            Michael Kors Tech Attached Bag - ₱5,699.00
+          </option>
+          <option value="Lacoste Convertible Tote Bag">
+            Lacoste Convertible Tote Bag - ₱3,999.00
+          </option>
+          <option value="Lacoste Tote Bag Small">
+            Lacoste Tote Bag Small - ₱4,990
+          </option>
+          <option value="Michael Kors Double Zip Wallet">
+            Michael Kors Double Zip Wallet - ₱3,599.00
+          </option>
+          <option value="Michael Kors Lanyard Wallet ">
+            Michael Kors Lanyard Wallet - ₱2,999.00
+          </option>
+          <option value="Michael Kors Cooper Folio Wallet ">
+            Michael Kors Cooper Folio Wallet - ₱3,499.00
+          </option>
+          <option value="Michael Kors Jaycee Medium backpack">
+            Michael Kors Jaycee Medium backpack - ₱4,699.00
+          </option>
+          <option value="Kate Spade Clare clear tote w/ wristlet">
+            - ₱6,199.00
+          </option>
+          <option value="Kate Spade Love shack 3D mini heart">
+            Kate Spade Love shack 3D mini heart - ₱6,199.00
+          </option>
+          <option value="Michael Kors Bradshaw Cam bag">
+            Michael Kors Bradshaw Cam bag- ₱4,599.00
+          </option>
+          <option value="Michael Kors Mirella sm tote">
+            - ₱3,799.00
+          </option>
+          <option value="Michael Kors Jet Set Medium duffle">
+            Michael Kors Jet Set Medium duffle- ₱3,799.00
+          </option>
+          <option value="Michael Kors Avril sm satchel">
+            Michael Kors Avril sm satchel- ₱4,988.00
+          </option>
+          <option value="Michael Kors Jaycee Medium backpack">
+            Michael Kors Jaycee Medium backpack- ₱5,399.00
+          </option>
+          <option value="Michael Kors Whitney Top handle ">
+            Michael Kors Whitney Top handle - ₱6,299.00
+          </option>
+          <option value="Michael Kors Sheila Large tote bag">
+            Michael Kors Sheila Large tote bag- ₱4,599.00
+          </option>
+          <option value="Coach Women's Watch">
+            Coach Women's Watch- ₱5,888.00
+          </option>
+          <option value="Pink Coach Women's Watch">
+            Pink Coach Women's Watch- ₱5,888.00
+          </option>
+          <option value="Green Coach Women's Watch">
+            Green Coach Women's Watch- ₱5,888.00
+          </option>
+          <option value="Blue Coach Silicone Watch">
+            Blue Silicone Watch- ₱5,399.00
+          </option>
+          <option value="Orange Coach Silicone Watch">
+            Orange Coach Silicone Watch- ₱5,399.00
+          </option>
+          <option value="Brown Coach Silicone Watch">
+            Brown Coach Silicone Watch- ₱5,399.00
+          </option>
+          <option value="White Coach Silicone Watch">
+            White Silicone Watch- ₱5,399.00
+          </option>
+          <option value="Mark Jacobs Mini Grand">
+            Mark Jacobs Mini Grand- ₱8,888.00
+          </option>
+          <option value="Michael Kors Lyra mini">
+            Michael Kors Lyra mini- ₱4,499.00
+          </option>
+          <option value="Pink Coach Sig Watch">
+            Pink Coach Sig Watch- ₱5,499.00
+          </option>
+          <option value="Tommy Hilifiger Mens Watch">
+            Tommy Hilifiger Mens Watch- ₱4,388.00
+          </option>
+          <option value="Dark Brown Tommy Hilifiger Mens Watch">
+            Dark brown Tommy Hilifiger Mens Watch- ₱4,388.00
+          </option>
+          <option value="Rainbow Coach Leather Watch">
+            Rainbow Coach Leather Watch- ₱4,788.00
+          </option>
+        </select><br>
+        <br>
+        <label for="fullname">Full Name</label> <input type="text" id="fullname" required="">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label> <input type="email" id="email" required="">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label> <input type="tel" id="phone" required="">
+      </div>
+      <div class="form-group">
+        <label for="address">Shipping Address</label> 
+        <textarea id="address" rows="3" required=""></textarea>
+      </div>
+      <div class="form-group">
+        <label for="payment">Payment Method</label> <select id="payment" required="">
+          <option value="BDO">
+            BDO
+          </option>
+          <option value="Gcash">
+            Gcash
+          </option>
+          <option value="cash">
+            Cash on Delivery
+          </option>
+          <option value="BPI">
+            BPI
+          </option>
+          <option value="UnionBank">
+            UnionBank
+          </option>
+        </select>
+      </div><button type="submit" class="place-order">Place Order</button>
+    </form>
+  </div>
+  <script>
+        // Load cart from local storage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        function updateOrderSummary() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const emptyCartMsg = document.getElementById('empty-cart-msg');
+            const totalPriceElement = document.getElementById('total-price');
+            let total = 0;
+
+            cartItemsContainer.innerHTML = "";
+
+            if (cart.length === 0) {
+                emptyCartMsg.style.display = "block";
+                totalPriceElement.innerText = "Total: $0";
+            } else {
+                emptyCartMsg.style.display = "none";
+                cart.forEach(item => {
+                    let cartItem = document.createElement('p');
+                    cartItem.innerHTML = <strong>${item.name}</strong> - $${item.price};
+                    cartItemsContainer.appendChild(cartItem);
+                    total += item.price;
+                });
+                totalPriceElement.innerText = Total: $${total};
+            }
+        }
+
+        // Form Submission Handling
+        document.getElementById('order-form').addEventListener('submit')
+        
+  </script> <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/483227670_608817805643499_8709823916282009722_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=9f807c&amp;_nc_eui2=AeEdyHRY902dteqg6jozn9mCRG_tWVvlfpVEb-1ZW-V-lVZ64bAhO5UWkzQe4feWHVRDF7xzxJrLfTD4WIO2XJJV&amp;_nc_ohc=PJrHT0H5-AIQ7kNvgGnYyWd&amp;_nc_oc=Adj6uIW5wkXJGPuD_r2EnD4MLqoBaAVIcMLnqPVZ5fqo7jVbokrP0YoaZutWmONXnUw&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl8-3.fna&amp;oh=03_Q7cD1wHMBJ4nCDDa-FIKmd0mPqsyt0OehW_n1r_ipq8jTkGNhg&amp;oe=67FDEE2C" alt="shopping bag qr" width="400" height="400"></div>
+  <div id="login" class="section">
+    <h1 class="wave"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span> <span>u</span><span>s</span></h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let letters = document.querySelectorAll(".wave span");
+        letters.forEach((letter, index) => {
+            letter.style.animationDelay = ${index * 0.1}s;
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="glow">Where Authenticity Meets Elegance</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="shimmer">Welcome to Tropic Lush Boutique, your ultimate destination for 100% original and premium-quality products sourced from the UK, USA, Canada, and UAE. We are more than just a store—we are a luxury shopping experience designed for those who value authenticity, style, and excellence.</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="wave"><span>O</span><span>u</span><span>r</span> <span>C</span><span>o</span><span>m</span><span>m</span><span>i</span><span>t</span><span>m</span><span>e</span><span>n</span><span>t</span> <span>T</span><span>o</span> <span>Y</span><span>o</span><span>u</span></h1>
+    <script>
+        let letters = document.querySelectorAll(".wave span");
+        letters.forEach((letter, index) => {
+            letter.style.animationDelay = ${index * 0.1}s;
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="shimmer">At Tropic Lush Boutique, we’re not just selling products; we’re delivering a promise of quality, exclusivity, and trust.</h1>
+    <dl>
+      <dt>✔ 100% Authentic Guarantee</dt>
+      <dd>-Every product is sourced directly from trusted distributors.</dd>
+      <dt>✔ Global Luxury at Your Fingertips</dt>
+      <dd>- From USA,Canada to Phillipines, we bring the best brands to you.</dd>
+      <dt>✔ Curated for Elegance</dt>
+      <dd>-Handpicked collections that define sophistication.</dd>
+      <dt>✔ Unparalleled Shopping Experience</dt>
+      <dd>-Personalized service, secure transactions, and fast shipping.</dd>
+    </dl>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="glow">Why Shop with us?</h1>
+    <dl>
+      <dt>🛍 Authenticity You Can Trust</dt>
+      <dd>- No knock-offs, no second-guessing. Only 100% original products.</dd>
+      <dt>💎 Limited-Edition Finds</dt>
+      <dd>-Rare, sought-after items that aren’t available everywhere.</dd>
+      <dt>🚀 Fast and Secure Shipping</dt>
+      <dd>- Your luxury arrives safely and promptly.</dd>
+      <dt>💖 A Personalized Shopping Experience</dt>
+      <dd>- Because you deserve the best service.</dd>
+    </dl>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="shimmer">At Tropic Lush Boutique, luxury isn’t just a word—it’s a standard. We’re here to redefine the way you shop for high-end brands, ensuring that every purchase is a celebration of genuine elegance and sophistication. Indulge in Authentic Luxury</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="shimmer">That’s why we made it our purpose to redefine premium shopping—offering only handpicked, verified, and globally sourced products that embody sophistication, class, and elegance.</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="wave"><span>W</span><span>h</span><span>a</span><span>t</span> <span>A</span><span>w</span><span>a</span><span>i</span><span>t</span><span>s</span> <span>Y</span><span>o</span><span>u</span> <span>A</span><span>t</span> <span>T</span><span>r</span><span>o</span><span>p</span><span>i</span><span>c</span> <span>L</span><span>u</span><span>s</span><span>h</span> <span>B</span><span>o</span><span>u</span><span>t</span><span>i</span><span>q</span><span>u</span><span>e</span><span>?</span></h1>
+    <dl>
+      <dt>👜 Designer Handbags</dt>
+      <dd>Iconic, must-have pieces from the world’s top luxury brands.</dd>
+      <dt>🌸 Luxury Perfumes</dt>
+      <dd>Signature scents that exude sophistication and charm.</dd>
+    </dl>
+    <h1 class="glow">Shop Tropic Lush Boutique Today!!</h1>
+  </div>
+  <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+  </script>
+  <div class="footer">
+    © 2025 Tropic Lush Boutique - All Rights Reserved
+  </div>
+</body>
+</html>
+
+
